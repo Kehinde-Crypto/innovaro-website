@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -18,6 +17,8 @@ export default function ContactPage() {
     message: "",
   })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -27,13 +28,27 @@ export default function ContactPage() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Simulate form submission
-    console.log("Form submitted:", formData)
-    setSubmitted(true)
-    // Reset form after 3 seconds
-    setTimeout(() => {
+    setLoading(true)
+    setError(null)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message")
+      }
+
+      setSubmitted(true)
       setFormData({
         name: "",
         email: "",
@@ -42,8 +57,15 @@ export default function ContactPage() {
         subject: "",
         message: "",
       })
-      setSubmitted(false)
-    }, 3000)
+
+      setTimeout(() => {
+        setSubmitted(false)
+      }, 3000)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -215,13 +237,20 @@ export default function ContactPage() {
                   </div>
                 )}
 
+                {error && (
+                  <div className="p-4 rounded-lg bg-red-500/10 border border-red-500 text-red-500">
+                    <p className="font-medium">{error}</p>
+                  </div>
+                )}
+
                 <Button
                   type="submit"
                   size="lg"
                   className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
-                  disabled={submitted}
+                  disabled={submitted || loading}
                 >
-                  {submitted ? "Message Sent!" : "Send Message"} <Send className="ml-2" size={18} />
+                  {loading ? "Sending..." : submitted ? "Message Sent!" : "Send Message"}{" "}
+                  <Send className="ml-2" size={18} />
                 </Button>
               </form>
             </div>
