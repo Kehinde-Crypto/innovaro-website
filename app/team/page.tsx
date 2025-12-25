@@ -61,7 +61,7 @@ export default function TeamPage() {
       role: "Backend Engineer",
       bio: "Specialized backend engineer focused on building robust, scalable server-side applications. Expert in API development, database optimization, and system architecture for enterprise solutions.",
       expertise: ["Backend Development", "API Design", "Database Architecture", "System Design"],
-      image: "/ayendi-simeon-backend.jpg",
+      image: "/images/photo-2025-11-23-17-19-30.jpg",
     },
     {
       id: 8,
