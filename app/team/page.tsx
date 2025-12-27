@@ -53,7 +53,7 @@ export default function TeamPage() {
       role: "Full-Stack & Software Engineer",
       bio: "Versatile full-stack software engineer with comprehensive expertise in both frontend and backend technologies. Skilled in building scalable applications with modern development practices and clean code architecture.",
       expertise: ["Full-Stack Development", "Software Architecture", "Clean Code", "DevOps"],
-      image: "/simon-ani-fullstack.jpg",
+      image: "/simon-ani-professional.jpg",
     },
     {
       id: 7,
