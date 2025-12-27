@@ -45,7 +45,7 @@ export default function TeamPage() {
       name: "Iseleye",
       role: "Cybersecurity Specialist",
       expertise: ["Network Security", "Penetration Testing", "Threat Analysis"],
-      image: "/iseleye-cybersecurity.jpg",
+      image: "/iseleye-professional.jpg",
     },
     {
       id: 6,
