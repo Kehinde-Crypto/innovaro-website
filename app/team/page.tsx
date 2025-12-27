@@ -53,7 +53,7 @@ export default function TeamPage() {
       role: "Full-Stack & Software Engineer",
       bio: "Versatile full-stack software engineer with comprehensive expertise in both frontend and backend technologies. Skilled in building scalable applications with modern development practices and clean code architecture.",
       expertise: ["Full-Stack Development", "Software Architecture", "Clean Code", "DevOps"],
-      image: "/simon-ani-fullstack.jpg",
+      image: "/simon-ani-vest.jpg", // updated image to blue vest professional photo
     },
     {
       id: 7,
@@ -61,7 +61,7 @@ export default function TeamPage() {
       role: "Backend Engineer",
       bio: "Specialized backend engineer focused on building robust, scalable server-side applications. Expert in API development, database optimization, and system architecture for enterprise solutions.",
       expertise: ["Backend Development", "API Design", "Database Architecture", "System Design"],
-      image: "/ayendi-simeon-backend.jpg",
+      image: "/ayendi-simeon-professional.jpg", // updated image to car/blazer professional photo
     },
     {
       id: 8,
