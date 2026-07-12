@@ -16,9 +16,9 @@ export default function TeamPage() {
     {
       id: 2,
       name: "Olubunmi-Browns Kehinde",
-      role: "Blockchain Engineer, AI Engineer & Cloud Engineer",
-      bio: "4+ years of expertise in blockchain technology with 1 year specialized in AI. Technical proficiency in smart contract development with Solidity and Rust, combined with cloud infrastructure expertise.",
-      expertise: ["Blockchain", "Smart Contracts", "AI/ML", "Cloud Engineering"],
+      role: "Blockchain Engineer & AI Engineer",
+      bio: "4+ years of expertise in blockchain technology with 1 year specialized in AI. Technical proficiency in smart contract development with Solidity and Rust, combined with system design expertise.",
+      expertise: ["Blockchain", "Smart Contracts", "AI/ML", "System Design"],
       image: "/tonye-winston-ceo.jpg",
     },
     {
@@ -116,7 +116,7 @@ export default function TeamPage() {
                     <img
                       src={executive.image || "/placeholder.svg"}
                       alt={executive.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                       <div className="flex gap-3">
