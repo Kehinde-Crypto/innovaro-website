@@ -7,72 +7,90 @@ export default function TeamPage() {
   const executives = [
     {
       id: 1,
-      name: "Alexandra Mitchell",
+      name: "TonyeWinston",
       role: "Chief Executive Officer",
-      bio: "20+ years of strategic leadership in global consulting with proven track record in business transformation.",
-      expertise: ["Strategic Leadership", "Business Transformation", "Global Operations"],
-      image: "/professional-woman-executive.jpg",
+      bio: "5+ years of strategic leadership in global distribution with expertise in strategic operations and global business expansion. Proven track record in leading software and operational excellence across international markets.",
+      expertise: ["Strategic Leadership", "Global Operations", "Software Infrastructure", "Prompt Engineer", "ChatGPT", "Claude"],
+      image: "/olubunmi-browns-kehinde.jpg",
     },
     {
       id: 2,
-      name: "James Chen",
-      role: "Chief Technology Officer",
-      bio: "Technology innovator with expertise in cloud architecture, AI, and enterprise digital transformation.",
-      expertise: ["Cloud Architecture", "AI/ML", "Enterprise Systems"],
-      image: "/professional-man-tech-executive.jpg",
+      name: "Olubunmi-Browns Kehinde",
+      role: "Blockchain Engineer & AI Engineer",
+      bio: "4+ years of expertise in blockchain technology with 1 year specialized in AI. Technical proficiency in smart contract development with Solidity and Rust, combined with system design expertise.",
+      expertise: ["Blockchain", "Smart Contracts", "AI/ML", "System Design", "Claude", "ChatGPT"],
+      image: "/tonye-winston-ceo.jpg",
     },
     {
       id: 3,
-      name: "Maria Rodriguez",
-      role: "Chief Operating Officer",
-      bio: "Operations expert focused on process optimization and efficiency improvement across global operations.",
-      expertise: ["Operations Management", "Process Optimization", "Supply Chain"],
-      image: "/professional-woman-operations.jpg",
+      name: "Amas Albert",
+      role: "Game Developer",
+      bio: "Experienced game developer with expertise in Unity framework development. Proficient in C# and C++ programming languages, creating immersive gaming experiences across multiple platforms.",
+      expertise: ["Unity Framework", "C#", "C++", "Game Development", "Claude Deep Thinking"],
+      image: "/amas-albert-game-developer.jpg",
     },
   ]
 
   const team = [
     {
       id: 4,
-      name: "David Thompson",
-      role: "Senior Consulting Partner",
-      expertise: ["Strategy", "Transformation", "Healthcare"],
-      image: "/professional-man-consultant.jpg",
+      name: "Wisdom Chizoba",
+      role: "Full-Stack Web Developer",
+      bio: "Expert full-stack developer specializing in modern web technologies. Proficient in Next.js for frontend development and Node.js for backend development with comprehensive knowledge of development tools and frameworks.",
+      expertise: ["Next.js", "Node.js", "Full-Stack Development", "Web Technologies", "Claude", "Nest.js"],
+      image: "/wisdom-chizoba-web-developer.jpg",
     },
     {
       id: 5,
-      name: "Sarah Williams",
-      role: "Lead Solutions Architect",
-      expertise: ["Architecture", "Cloud Solutions", "Integration"],
-      image: "/professional-woman-architect.jpg",
+      name: "Iseleye",
+      role: "Cybersecurity Specialist",
+      expertise: ["Network Security", "Penetration Testing", "Threat Analysis", "AI Deep Thinking"],
+      image: "/iseleye-professional.jpg",
     },
     {
       id: 6,
-      name: "Michael Johnson",
-      role: "Digital Strategy Lead",
-      expertise: ["Digital Transformation", "Innovation", "Change Management"],
-      image: "/professional-man-strategy.jpg",
+      name: "Simon Ani",
+      role: "Full-Stack & Software Engineer",
+      bio: "Versatile full-stack software engineer with comprehensive expertise in both frontend and backend technologies. Skilled in building scalable applications with modern development practices and system architecture.",
+      expertise: ["Full-Stack Development", "System Architecture", "DevOps", "Database Design"],
+      image: "/simon-ani-vest.jpg", // updated image to blue vest professional photo
     },
     {
       id: 7,
-      name: "Emma Davis",
-      role: "Senior Data Scientist",
-      expertise: ["Data Science", "Analytics", "Machine Learning"],
-      image: "/professional-woman-scientist.jpg",
+      name: "Ayendi Simeon",
+      role: "Backend Engineer",
+      bio: "Specialized backend engineer focused on building robust, scalable server-side applications. Expert in API development, database optimization, and system architecture for enterprise solutions.",
+      expertise: ["Backend Development", "API Design", "Database Architecture", "System Design", "ChatGPT", "Caching"],
+      image: "/ayendi-simeon-professional.jpg", // updated image to car/blazer professional photo
     },
     {
       id: 8,
-      name: "Robert Kumar",
-      role: "Infrastructure Engineer",
-      expertise: ["Cloud Infrastructure", "DevOps", "Security"],
-      image: "/professional-man-engineer.jpg",
+      name: "Priye Horsfall",
+      role: "International Brand Ambassador (Turkish Republic)",
+      expertise: ["Brand Strategy", "International Relations", "Market Expansion"],
+      image: "/priye-horsfall-ambassador.jpg",
     },
     {
       id: 9,
+      name: "Reevs Akwa",
+      role: "Backend Engineer",
+      expertise: ["Backend Development", "API Design", "Database Architecture", "Prompt Engineering"],
+      image: "/reevs-akwa-backend.jpg",
+    },
+    {
+      id: 10,
       name: "Jennifer Park",
-      role: "Customer Success Director",
-      expertise: ["Client Relations", "Implementation", "Support"],
-      image: "/professional-woman-customer-success.jpg",
+      role: "Creative Animator Developer",
+      expertise: ["Animation", "Creative Development", "UI/UX Animation", "Google Stitch", "FigJam"],
+      image: "/jennifer-park-animator.jpg",
+    },
+    {
+      id: 11,
+      name: "Favour",
+      role: "Robotic Engineer",
+      bio: "Specialist in robotics engineering with expertise in Arduino-based prototyping and automation. Proficient in Python for teaching, prototyping, and developing robotic systems for educational and industrial applications.",
+      expertise: ["Arduino", "Python", "Robotics", "Prototyping", "Electronics"],
+      image: "/favour-robotic-engineer.jpg",
     },
   ]
 
@@ -106,7 +124,7 @@ export default function TeamPage() {
                     <img
                       src={executive.image || "/placeholder.svg"}
                       alt={executive.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                       <div className="flex gap-3">
@@ -142,7 +160,7 @@ export default function TeamPage() {
         {/* Full Team */}
         <section className="w-full py-20 md:py-28 bg-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-16 text-center">Core Team Members</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-16 text-center">More Team Members</h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {team.map((member) => (
