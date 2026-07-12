@@ -10,7 +10,7 @@ export default function TeamPage() {
       name: "TonyeWinston",
       role: "Chief Executive Officer",
       bio: "5+ years of strategic leadership in global distribution with expertise in strategic operations and global business expansion. Proven track record in leading software and operational excellence across international markets.",
-      expertise: ["Strategic Leadership", "Global Operations", "Software Infrastructure"],
+      expertise: ["Strategic Leadership", "Global Operations", "Software Infrastructure", "Prompt Engineer", "ChatGPT", "Claude"],
       image: "/olubunmi-browns-kehinde.jpg",
     },
     {
@@ -18,7 +18,7 @@ export default function TeamPage() {
       name: "Olubunmi-Browns Kehinde",
       role: "Blockchain Engineer & AI Engineer",
       bio: "4+ years of expertise in blockchain technology with 1 year specialized in AI. Technical proficiency in smart contract development with Solidity and Rust, combined with system design expertise.",
-      expertise: ["Blockchain", "Smart Contracts", "AI/ML", "System Design"],
+      expertise: ["Blockchain", "Smart Contracts", "AI/ML", "System Design", "Claude", "ChatGPT"],
       image: "/tonye-winston-ceo.jpg",
     },
     {
@@ -26,7 +26,7 @@ export default function TeamPage() {
       name: "Amas Albert",
       role: "Game Developer",
       bio: "Experienced game developer with expertise in Unity framework development. Proficient in C# and C++ programming languages, creating immersive gaming experiences across multiple platforms.",
-      expertise: ["Unity Framework", "C#", "C++", "Game Development"],
+      expertise: ["Unity Framework", "C#", "C++", "Game Development", "Claude Deep Thinking"],
       image: "/amas-albert-game-developer.jpg",
     },
   ]
@@ -37,22 +37,22 @@ export default function TeamPage() {
       name: "Wisdom Chizoba",
       role: "Full-Stack Web Developer",
       bio: "Expert full-stack developer specializing in modern web technologies. Proficient in Next.js for frontend development and Node.js for backend development with comprehensive knowledge of development tools and frameworks.",
-      expertise: ["Next.js", "Node.js", "Full-Stack Development", "Web Technologies"],
+      expertise: ["Next.js", "Node.js", "Full-Stack Development", "Web Technologies", "Claude", "Nest.js"],
       image: "/wisdom-chizoba-web-developer.jpg",
     },
     {
       id: 5,
       name: "Iseleye",
       role: "Cybersecurity Specialist",
-      expertise: ["Network Security", "Penetration Testing", "Threat Analysis"],
+      expertise: ["Network Security", "Penetration Testing", "Threat Analysis", "AI Deep Thinking"],
       image: "/iseleye-professional.jpg",
     },
     {
       id: 6,
       name: "Simon Ani",
       role: "Full-Stack & Software Engineer",
-      bio: "Versatile full-stack software engineer with comprehensive expertise in both frontend and backend technologies. Skilled in building scalable applications with modern development practices and clean code architecture.",
-      expertise: ["Full-Stack Development", "Software Architecture", "Clean Code", "DevOps"],
+      bio: "Versatile full-stack software engineer with comprehensive expertise in both frontend and backend technologies. Skilled in building scalable applications with modern development practices and system architecture.",
+      expertise: ["Full-Stack Development", "System Architecture", "DevOps", "Database Design"],
       image: "/simon-ani-vest.jpg", // updated image to blue vest professional photo
     },
     {
@@ -60,7 +60,7 @@ export default function TeamPage() {
       name: "Ayendi Simeon",
       role: "Backend Engineer",
       bio: "Specialized backend engineer focused on building robust, scalable server-side applications. Expert in API development, database optimization, and system architecture for enterprise solutions.",
-      expertise: ["Backend Development", "API Design", "Database Architecture", "System Design"],
+      expertise: ["Backend Development", "API Design", "Database Architecture", "System Design", "ChatGPT", "Caching"],
       image: "/ayendi-simeon-professional.jpg", // updated image to car/blazer professional photo
     },
     {
@@ -74,15 +74,23 @@ export default function TeamPage() {
       id: 9,
       name: "Reevs Akwa",
       role: "Backend Engineer",
-      expertise: ["Backend Development", "API Design", "Database Architecture"],
+      expertise: ["Backend Development", "API Design", "Database Architecture", "Prompt Engineering"],
       image: "/reevs-akwa-backend.jpg",
     },
     {
       id: 10,
       name: "Jennifer Park",
       role: "Creative Animator Developer",
-      expertise: ["Animation", "Creative Development", "UI/UX Animation"],
+      expertise: ["Animation", "Creative Development", "UI/UX Animation", "Google Stitch", "FigJam"],
       image: "/jennifer-park-animator.jpg",
+    },
+    {
+      id: 11,
+      name: "Favour",
+      role: "Robotic Engineer",
+      bio: "Specialist in robotics engineering with expertise in Arduino-based prototyping and automation. Proficient in Python for teaching, prototyping, and developing robotic systems for educational and industrial applications.",
+      expertise: ["Arduino", "Python", "Robotics", "Prototyping", "Electronics"],
+      image: "/favour-robotic-engineer.jpg",
     },
   ]
 
