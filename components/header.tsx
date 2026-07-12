@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,11 +22,15 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-bold text-2xl">
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-accent">
-              <span className="text-foreground font-bold">IN</span>
-            </div>
-            <span className="text-primary hidden sm:inline">Innovaro</span>
+          <Link href="/" className="flex items-center gap-2 font-bold">
+            <Image
+              src="/innovaro-logo.png"
+              alt="Innovaro Global Services Logo"
+              width={50}
+              height={50}
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
